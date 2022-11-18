@@ -3,6 +3,8 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import React, { ReactElement } from "react";
 import { PageRender, getSuncelStaticProps, getSuncelStaticPaths } from "@suncel/nextjs";
 import { ContentWrapper } from "@/components/layouts/contentWrapper";
+import HeroBlock from "@/components/layouts/header";
+import FooterBlock from "@/components/layouts/footer/footer";
 
 export default function Slug(props: any) {
   if (!props?.suncel) return <div>Cannot load the page</div>;
@@ -11,7 +13,13 @@ export default function Slug(props: any) {
 }
 
 Slug.getLayout = function getLayout(page: ReactElement) {
-  return <ContentWrapper>{page}</ContentWrapper>;
+  return (
+    <ContentWrapper>
+      <HeroBlock />
+      {page}
+      <FooterBlock />
+    </ContentWrapper>
+  );
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
