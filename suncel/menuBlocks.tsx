@@ -1,10 +1,12 @@
 import { MenuBlockSchema } from "@suncel/nextjs";
+import About from "./blocks/about/About";
 import { BlogBlock } from "./blocks/blogBlock/Blog";
 import { ContactBlock } from "./blocks/contact/ContactBlock";
 import Hero from "./blocks/hero/Hero";
 import { TitleAndSub } from "./blocks/hero/titleAndSub";
 
 import { Price } from "./blocks/price/Price";
+import Service from "./blocks/services/Service";
 import TestWord from "./blocks/test/TestWord";
 
 export const menuBlocks: MenuBlockSchema[] = [
@@ -40,6 +42,14 @@ export const menuBlocks: MenuBlockSchema[] = [
           {
             component: TestWord,
             name: "test Page",
+          },
+          {
+            component: About,
+            name: "About Block",
+          },
+          {
+            component: Service,
+            name: "Services Block",
           },
         ],
       },

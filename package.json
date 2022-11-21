@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
+    "@heroicons/react": "^2.0.13",
     "@suncel/nextjs": "~1.0.22",
+    "clsx": "^1.2.1",
     "flowbite": "^1.5.4",
     "flowbite-react": "^0.3.4",
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
     "sass": "^1.56.1"
   },
   "devDependencies": {

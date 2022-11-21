@@ -3,197 +3,104 @@ import { SuncelBlock } from "@suncel/nextjs";
 
 export const BlogBlock: SuncelBlock = ({}) => {
   return (
-    <section className="pt-24 pb-36 bg-white overflow-hidden">
-      <div className="container px-4 mx-auto">
-        <h2 className="mb-4 text-6xl md:text-7xl text-center font-bold font-heading font-heading tracking-px-n leading-tight">
-          Latest from Blog
-        </h2>
-        <p className="mb-24 font-medium text-gray-600 text-center leading-relaxed md:max-w-lg mx-auto">
-          Lorem ipsum dolor sit amet, to the consectr adipiscing elit. Volutpat
-          tempor to the condimentum vitae vel purus.
-        </p>
-        <div className="flex flex-wrap -m-8">
-          <div className="w-full md:w-1/2 p-8">
-            <div className="flex flex-wrap lg:items-center -m-4">
-              <div className="w-auto p-4">
-                <div className="overflow-hidden rounded-xl">
-                  <img
-                    className="transform hover:scale-105 transition ease-in-out duration-1000"
-                    src="flaro-assets/images/blog/blog.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex-1 p-4">
-                <div className="md:max-w-xs">
-                  <div className="flex flex-col justify-between h-full">
-                    <div className="mb-6">
-                      <p className="mb-1.5 text-sm text-gray-500 font-medium uppercase tracking-px">
-                        Product
-                      </p>
-                      <a
-                        className="inline-block hover:text-gray-800 hover:underline"
-                        href="#"
-                      >
-                        <h3 className="text-xl font-semibold leading-normal">
-                          An IT services company that can grow your business
-                        </h3>
-                      </a>
-                    </div>
-                    <div className="flex flex-wrap items-center -m-1">
-                      <div className="w-auto p-1">
-                        <img
-                          src="flaro-assets/images/blog/blog-avatar.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="w-auto p-1">
-                        <p className="text-sm font-semibold leading-relaxed">
-                          Wade Warren
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <section className="py-10 bg-white sm:py-16 lg:py-24">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            Latest from blog
+          </h2>
+          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis.
+          </p>
+        </div>
+
+        <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12">
+          <div>
+            <a href="#" title="" className="block aspect-w-4 aspect-h-3">
+              <img
+                className="object-cover w-full h-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-1.jpg"
+                alt=""
+              />
+            </a>
+            <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-rose-500 bg-rose-100 mt-9">
+              {" "}
+              Technology{" "}
+            </span>
+            <p className="mt-6 text-xl font-semibold">
+              <a href="#" title="" className="text-black">
+                {" "}
+                How to mange your remote team?{" "}
+              </a>
+            </p>
+            <p className="mt-4 text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <div className="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"></div>
+            <span className="block text-sm font-bold tracking-widest text-gray-500 uppercase">
+              {" "}
+              Martin Jones . June 12, 2021{" "}
+            </span>
           </div>
-          <div className="w-full md:w-1/2 p-8">
-            <div className="flex flex-wrap lg:items-center -m-4">
-              <div className="w-auto p-4">
-                <div className="overflow-hidden rounded-xl">
-                  <img
-                    className="transform hover:scale-105 transition ease-in-out duration-1000"
-                    src="flaro-assets/images/blog/blog2.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex-1 p-4">
-                <div className="md:max-w-xs">
-                  <div className="flex flex-col justify-between h-full">
-                    <div className="mb-6">
-                      <p className="mb-1.5 text-sm text-gray-500 font-medium uppercase tracking-px">
-                        Product
-                      </p>
-                      <a
-                        className="inline-block hover:text-gray-800 hover:underline"
-                        href="#"
-                      >
-                        <h3 className="text-xl font-semibold leading-normal">
-                          How to handle your good employee for the business
-                        </h3>
-                      </a>
-                    </div>
-                    <div className="flex flex-wrap items-center -m-1">
-                      <div className="w-auto p-1">
-                        <img
-                          src="flaro-assets/images/blog/blog-avatar2.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="w-auto p-1">
-                        <p className="text-sm font-semibold leading-relaxed">
-                          Bessie Cooper
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div>
+            <a href="#" title="" className="block aspect-w-4 aspect-h-3">
+              <img
+                className="object-cover w-full h-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-2.jpg"
+                alt=""
+              />
+            </a>
+            <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-9">
+              {" "}
+              Marketing{" "}
+            </span>
+            <p className="mt-6 text-xl font-semibold">
+              <a href="#" title="" className="text-black">
+                {" "}
+                6 Product launching emails you want to use on next campaign.{" "}
+              </a>
+            </p>
+            <p className="mt-4 text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <div className="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"></div>
+            <span className="block text-sm font-bold tracking-widest text-gray-500 uppercase">
+              {" "}
+              Martin Jones . June 12, 2021{" "}
+            </span>
           </div>
-          <div className="w-full md:w-1/2 p-8">
-            <div className="flex flex-wrap lg:items-center -m-4">
-              <div className="w-auto p-4">
-                <div className="overflow-hidden rounded-xl">
-                  <img
-                    className="transform hover:scale-105 transition ease-in-out duration-1000"
-                    src="flaro-assets/images/blog/blog3.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex-1 p-4">
-                <div className="md:max-w-xs">
-                  <div className="flex flex-col justify-between h-full">
-                    <div className="mb-6">
-                      <p className="mb-1.5 text-sm text-gray-500 font-medium uppercase tracking-px">
-                        Product
-                      </p>
-                      <a
-                        className="inline-block hover:text-gray-800 hover:underline"
-                        href="#"
-                      >
-                        <h3 className="text-xl font-semibold leading-normal">
-                          New consulting for all kind offer related to IT
-                          services
-                        </h3>
-                      </a>
-                    </div>
-                    <div className="flex flex-wrap items-center -m-1">
-                      <div className="w-auto p-1">
-                        <img
-                          src="flaro-assets/images/blog/blog-avatar3.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="w-auto p-1">
-                        <p className="text-sm font-semibold leading-relaxed">
-                          Albert Flores
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 p-8">
-            <div className="flex flex-wrap lg:items-center -m-4">
-              <div className="w-auto p-4">
-                <div className="overflow-hidden rounded-xl">
-                  <img
-                    className="transform hover:scale-105 transition ease-in-out duration-1000"
-                    src="flaro-assets/images/blog/blog4.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex-1 p-4">
-                <div className="md:max-w-xs">
-                  <div className="flex flex-col justify-between h-full">
-                    <div className="mb-6">
-                      <p className="mb-1.5 text-sm text-gray-500 font-medium uppercase tracking-px">
-                        Product
-                      </p>
-                      <a
-                        className="inline-block hover:text-gray-800 hover:underline"
-                        href="#"
-                      >
-                        <h3 className="text-xl font-semibold leading-normal">
-                          How life insurance helps you during financial
-                          insolvency
-                        </h3>
-                      </a>
-                    </div>
-                    <div className="flex flex-wrap items-center -m-1">
-                      <div className="w-auto p-1">
-                        <img
-                          src="flaro-assets/images/blog/blog-avatar4.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="w-auto p-1">
-                        <p className="text-sm font-semibold leading-relaxed">
-                          Jerome Bell
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div>
+            <a href="#" title="" className="block aspect-w-4 aspect-h-3">
+              <img
+                className="object-cover w-full h-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-3.jpg"
+                alt=""
+              />
+            </a>
+            <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-9">
+              {" "}
+              Marketing{" "}
+            </span>
+            <p className="mt-6 text-xl font-semibold">
+              <a href="#" title="" className="text-black">
+                {" "}
+                Learn from the best: 7 email marketing ideas you can use{" "}
+              </a>
+            </p>
+            <p className="mt-4 text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <div className="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"></div>
+            <span className="block text-sm font-bold tracking-widest text-gray-500 uppercase">
+              {" "}
+              Martin Jones . June 12, 2021{" "}
+            </span>
           </div>
         </div>
       </div>
