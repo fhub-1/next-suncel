@@ -34,7 +34,17 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   return {
     props: {
       // Pass the page props related to Suncel into the suncel prop
-      suncel: suncelProps,
+      suncel: {
+        ...suncelProps,
+        pageProps: {
+          createAt: new Date(suncelProps?.created_at!).toLocaleString("en-us", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          }),
+        },
+      },
     },
     revalidate: 10,
   };

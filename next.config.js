@@ -6,7 +6,11 @@ const nextConfig = {
   swcMinify: true,
 
   images: {
-    domains: ["assets.suncel.io", "next-suncel-736qmh16o-fhub-1.vercel.app"],
+    domains: [
+      "assets.suncel.io",
+      "cdn.rareblocks.xyz",
+      "next-suncel-736qmh16o-fhub-1.vercel.app",
+    ],
   },
 };
 

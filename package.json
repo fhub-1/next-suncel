@@ -12,6 +12,8 @@
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
     "@suncel/nextjs": "~1.0.22",
+    "@tiptap/core": "^2.0.0-beta.202",
+    "@tiptap/starter-kit": "^2.0.0-beta.202",
     "clsx": "^1.2.1",
     "flowbite": "^1.5.4",
     "flowbite-react": "^0.3.4",
@@ -28,6 +30,7 @@
     "autoprefixer": "^10.4.13",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
+    "flowbite-typography": "^1.0.3",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4",
     "typescript": "4.8.4"

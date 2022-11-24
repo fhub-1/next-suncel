@@ -1,8 +1,16 @@
 import React from "react";
-import { RichText, RichTextKey, RichTextProps } from "@suncel/nextjs/components";
+import {
+  RichText,
+  RichTextKey,
+  RichTextProps,
+} from "@suncel/nextjs/components";
+import Blockquote from "@tiptap/extension-blockquote";
 import classes from "./styles.module.scss";
 
-export const CustomRichText: React.FC<RichTextProps> = ({ featuresHTMLAttributes, ...rest }) => {
+export const CustomRichText: React.FC<RichTextProps> = ({
+  featuresHTMLAttributes,
+  ...rest
+}) => {
   return (
     <RichText
       className={classes.richTextStyle}
@@ -23,17 +31,31 @@ export const CustomRichText: React.FC<RichTextProps> = ({ featuresHTMLAttributes
         RichTextKey.ALIGN_JUSTIFY,
       ]}
       featuresHTMLAttributes={{
-        [RichTextKey.ELEMENT_HEADING]: {
-          class: classes.heading,
-        },
-        [RichTextKey.ELEMENT_UL]: {
-          class: classes.customList,
-        },
-        [RichTextKey.ELEMENT_PARAGRAPH]: {
-          class: classes.pStyle,
-        },
+        // [RichTextKey.ELEMENT_HEADING]: {
+        //   class: classes.heading,
+        // },
+        // [RichTextKey.ELEMENT_UL]: {
+        //   class: classes.customList,
+        // },
+        // [RichTextKey.ELEMENT_PARAGRAPH]: {
+        //   class: classes.pStyle,
+        // },
         ...featuresHTMLAttributes,
       }}
+      extensions={[Blockquote]}
+      extendedMenu={[
+        {
+          element: ({ editor }) => {
+            return (
+              <button
+                onClick={() => editor.chain().focus().toggleBlockquote().run()}
+              >
+                quote
+              </button>
+            );
+          },
+        },
+      ]}
       {...rest}
     />
   );

@@ -2,10 +2,14 @@ import { MenuBlockSchema } from "@suncel/nextjs";
 import About from "./blocks/about/About";
 import { BlogBlock } from "./blocks/blogBlock/Blog";
 import { ContactBlock } from "./blocks/contact/ContactBlock";
+import WorkSteps from "./blocks/cta/WorkSteps";
+import BlogHero from "./blocks/hero/blogHero";
 import Hero from "./blocks/hero/Hero";
 import { TitleAndSub } from "./blocks/hero/titleAndSub";
+import { ImageBlock } from "./blocks/imageBlock";
 
 import { Price } from "./blocks/price/Price";
+import { RichTextBlock } from "./blocks/richText";
 import Service from "./blocks/services/Service";
 import TestWord from "./blocks/test/TestWord";
 
@@ -50,6 +54,37 @@ export const menuBlocks: MenuBlockSchema[] = [
           {
             component: Service,
             name: "Services Block",
+          },
+          {
+            component: BlogHero,
+            name: BlogHero?.suncel?.displayName,
+          },
+        ],
+      },
+      {
+        name: "Text",
+        variants: [
+          {
+            component: RichTextBlock,
+            name: RichTextBlock?.suncel?.displayName,
+          },
+        ],
+      },
+      {
+        name: "Media",
+        variants: [
+          {
+            component: ImageBlock,
+            name: ImageBlock?.suncel?.displayName,
+          },
+        ],
+      },
+      {
+        name: "Work Steps",
+        variants: [
+          {
+            component: WorkSteps,
+            name: WorkSteps?.suncel?.displayName,
           },
         ],
       },
