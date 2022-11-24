@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Suncel" src="https://res.cloudinary.com/dqtvi5eil/image/upload/v1669283238/Screenshot_from_2022-11-24_12-33-42_qqynu2.png" width="600" />
+    <img alt="Suncel" src="https://res.cloudinary.com/dqtvi5eil/image/upload/v1669283238/Screenshot_from_2022-11-24_12-33-42_qqynu2.png"  />
 </p>
 <h1 align="center">
   Suncel NextJS Portfolio Website for Developer's
