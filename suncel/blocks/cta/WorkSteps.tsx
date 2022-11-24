@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { SuncelBlock } from "@suncel/nextjs";
-import Image from "next/image";
 import React from "react";
 
 const WorkSteps: SuncelBlock = ({}) => {
@@ -19,9 +19,7 @@ const WorkSteps: SuncelBlock = ({}) => {
 
         <div className="relative mt-12 lg:mt-20">
           <div className="absolute inset-x-0 hidden xl:px-44 top-2 md:block md:px-20 lg:px-28">
-            <Image
-              width={64}
-              height={64}
+            <img
               className="w-full"
               src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/2/curved-dotted-line.svg"
               alt=""
