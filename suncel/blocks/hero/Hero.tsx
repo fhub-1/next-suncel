@@ -63,6 +63,7 @@ const Hero: SuncelBlock = ({ title, text, link, linkLabel, image }) => {
             className="w-96 h-96 ring-2 ring-blue-500 rounded-full"
             height={96}
             width={96}
+            priority
           />
         </div>
       </div>
@@ -89,17 +90,11 @@ Hero.suncel = {
   },
   editor: {
     settings: [
-      // image componet
       {
         type: "link",
         slug: "link",
         name: "profile Link",
       },
-      // {
-      //   type: "link",
-      //   slug: "link",
-      //   name: "sale link",
-      // },
       {
         type: "image",
         slug: "image",
